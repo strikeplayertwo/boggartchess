@@ -17,6 +17,6 @@ This is what the game would look like for you on your opponent's turn. On the la
 On your turn, you would see your current move on the large board as well as your opponent's previous position and highlighted move on the small board.
 
 # Purpose of the game
-While playing Boggart Chess, players would 
+While playing Boggart Chess, players would learn positional chess and theory much faster than playing normal chess. The game forces players to play positions from many openings, and when paired with the instant feedback that this variant gives, the potential for growth from Boggart Chess is enormous. Learning happens best when there is instant feedback, and Boggart Chess gives players a chance to study and compete at the same time--it effectively makes analyzing your games seamless and engaging instead of a slow-paced, after-the-fact analysis. This variant both prevents players from getting trapped in cycles of playing similar openings and games and helps them learn quicker while doing so. 
 
 # Generation
