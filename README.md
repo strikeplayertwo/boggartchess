@@ -22,6 +22,20 @@ While playing Boggart Chess, players would learn positional chess and theory muc
 Boggart Chess is also more effective for learning than traditional chess training such as completing puzzles or tactics because those methods are often restricted to presenting the player positions where there is only one best move, limiting their effectiveness in opening and middlegame play. Boggart Chess presenting the player with positions in which there are multiple best moves shifts more of a focus onto positional play, the most important aspect of long-term learning in chess. In addition, when a player is doing chess puzzles, they know there is only one solution, causing them to look at the board differently and worsening their learning as they already know something important about the position.
 
 # Generation
-The entire challenge with coding this game is figuring out how to most actively generate positions. There are three methods I have come up with for this:
+The entire challenge with coding this game is figuring out how to most accurately generate positions. There are three methods I have come up with for this. Every position in one game of Boggart Chess stems from one opening, and I will describe how this is accomplished with each method. Additionally, the goal with this generation is to predict the highest value of average centipawn loss--the average amount a player would mess up the position. We'll call it CentiMax for short, and each method has ways to increase this.
 
-#1-- 
+Methods:  
+#1-- Random piece placement  
+Places pieces somewhat randomly on the board.  
+Opening: %of pieces in their opening position is required  
+CentiMax: %chance to place kings on opposite side of the board, %chance to generate a piece in the line of sight of another piece (it would place a piece a knight's move away from a knight, on a diagonal from a bishop, etc. as creating the potential for captures may increase CentiMax)  
+
+#2-- Random move sequencing  
+Starts with an opening position, then uses probable/slightly random moves to get a new position.  
+CentiMax: Prefers for moves that increase the number of potential captures  
+
+#3-- Position gathering  
+Takes positions from databases of human games where it thinks the average centipawn loss would be high.
+Opening: Takes positions that stemmed from the desired opening  
+CentiMax: Takes positions from Grandmaster games specifically, uses CentiMax indicators to rate and pick potential positions.
+
