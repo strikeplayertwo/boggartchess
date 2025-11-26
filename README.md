@@ -35,7 +35,12 @@ Starts with an opening position, then uses probable/slightly random moves to get
 CentiMax: Prefers for moves that increase the number of potential captures  
 
 #3-- Position gathering  
-Takes positions from databases of human games where it thinks the average centipawn loss would be high.
+Takes positions from databases of human games.
 Opening: Takes positions that stemmed from the desired opening  
-CentiMax: Takes positions from Grandmaster games specifically, uses CentiMax indicators to rate and pick potential positions.
+CentiMax: Takes positions from Grandmaster games specifically  
 
+In addition, for all three methods an algorithm can give feedback on the position that the method has created by assigning it a predicted average centipawn loss score. If this value is too low, another position will be generated. Here are the indicators that may affect the predicted score:
+#of undefended attacked pieces-0 is generally the best, 1 is generally the worst, anything more gets progressively better  
+#of total attacked pieces-higher is better
+#of best moves-I'm not sure for now. Less may generally be better, although 1 clear best move may be worse than 2 or 3 best moves.  
+Note: For now, #of best moves can be defined as the best move and the number of moves that result in a difference in eval of 0.3 or less from the best move.  
