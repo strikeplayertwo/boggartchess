@@ -18,6 +18,10 @@ On your turn, you would see your current move on the large board as well as your
 
 # Purpose of the game
 While playing Boggart Chess, players would learn positional chess and theory much faster than playing normal chess. The game forces players to play positions from many openings, and when paired with the instant feedback that this variant gives, the potential for growth from Boggart Chess is enormous. Learning happens best when there is instant feedback, and Boggart Chess gives players a chance to study and compete at the same time--it effectively makes analyzing your games seamless and engaging instead of a slow-paced, after-the-fact analysis. This variant both prevents players from getting trapped in cycles of playing similar openings and games and helps them learn quicker while doing so.  
+
 Boggart Chess is also more effective for learning than traditional chess training such as completing puzzles or tactics because those methods are often restricted to presenting the player positions where there is only one best move, limiting their effectiveness in opening and middlegame play. Boggart Chess presenting the player with positions in which there are multiple best moves shifts more of a focus onto positional play, the most important aspect of long-term learning in chess. In addition, when a player is doing chess puzzles, they know there is only one solution, causing them to look at the board differently and worsening their learning as they already know something important about the position.
 
 # Generation
+The entire challenge with coding this game is figuring out how to most actively generate positions. There are three methods I have come up with for this:
+
+#1-- 
