@@ -19,7 +19,9 @@ On your turn, you would see your current move on the large board as well as your
 # Purpose of the game
 While playing Boggart Chess, players would learn positional chess and theory much faster than playing normal chess. The game forces players to play positions from many openings, and when paired with the instant feedback that this variant gives, the potential for growth from Boggart Chess is enormous. Learning happens best when there is instant feedback, and Boggart Chess gives players a chance to study and compete at the same time--it effectively makes analyzing your games seamless and engaging instead of a slow-paced, after-the-fact analysis. This variant both prevents players from getting trapped in cycles of playing similar openings and games and helps them learn quicker while doing so.  
 
-Boggart Chess is also more effective for learning than traditional chess training such as completing puzzles or tactics because those methods are often restricted to presenting the player positions where there is only one best move, limiting their effectiveness in opening and middlegame play. Boggart Chess presenting the player with positions in which there are multiple best moves shifts more of a focus onto positional play, the most important aspect of long-term learning in chess. In addition, when a player is doing chess puzzles, they know there is only one solution, causing them to look at the board differently and worsening their learning as they already know something important about the position.
+Boggart Chess is also more effective for learning than traditional chess training such as completing puzzles or tactics because those methods are often restricted to presenting the player positions where there is only one best move, limiting their effectiveness in opening and middlegame play. Boggart Chess presenting the player with positions in which there are multiple best moves shifts more of a focus onto positional play, the most important aspect of long-term learning in chess. In addition, when a player is doing chess puzzles, they know there is only one solution, causing them to look at the board differently and worsening their learning as they already know something important about the position.  
+
+I also have ideas for a helpful review mode, although more info on that will come later.
 
 # Generation
 The entire challenge with coding this game is figuring out how to most accurately generate positions. There are three methods I have come up with for this. Every position in one game of Boggart Chess stems from one opening, and I will describe how this is accomplished with each method. Additionally, the goal with this generation is to predict the highest value of average centipawn loss--the average amount a player would mess up the position. We'll call it CentiMax for short, and each method has ways to increase this.
@@ -39,8 +41,10 @@ Takes positions from databases of human games.
 Opening: Takes positions that stemmed from the desired opening  
 CentiMax: Takes positions from Grandmaster games specifically  
 
-In addition, for all three methods an algorithm can give feedback on the position that the method has created by assigning it a predicted average centipawn loss score. If this value is too low, another position will be generated. Here are the indicators that may affect the predicted score:
+In addition, for all three methods an algorithm can give feedback on the position that the method has created by assigning it a predicted average centipawn loss score. If this value is too low, another position will be generated. Here are the indicators that may affect the predicted score:  
 #of undefended attacked pieces-0 is generally the best, 1 is generally the worst, anything more gets progressively better  
-#of total attacked pieces-higher is better
+#of total attacked pieces-higher is better  
 #of best moves-I'm not sure for now. Less may generally be better, although 1 clear best move may be worse than 2 or 3 best moves.  
 Note: For now, #of best moves can be defined as the best move and the number of moves that result in a difference in eval of 0.3 or less from the best move.  
+#of pieces on the board-this may have a small effect.  
+ 
