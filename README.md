@@ -31,6 +31,7 @@ Methods:
 Places pieces somewhat randomly on the board.  
 Opening: %of pieces in their opening position is required  
 CentiMax: %chance to place kings on opposite side of the board, %chance to generate a piece in the line of sight of another piece (it would place a piece a knight's move away from a knight, on a diagonal from a bishop, etc. as creating the potential for captures may increase CentiMax)  
+To increase the accuracy of these positions to real chess positions, kings can be placed near their starting squares or castling squares, no two bishops of the same color can be on the same color square, knights and bishops can be placed in common positions for them, and common pawn formations for the opening can be generated in chunks.  
 
 #2-- Random move sequencing  
 Starts with an opening position, then uses probable/slightly random moves to get a new position.  
