@@ -49,3 +49,4 @@ In addition, for all three methods an algorithm can give feedback on the positio
 Note: For now, #of best moves can be defined as the best move and the number of moves that result in a difference in eval of 0.3 or less from the best move.  
 #of pieces on the board-this may have a small effect.  
  
+This algorithm to predict average centipawn loss would greatly benefit from being the result of AI that generates positions, keeping track of the values for the above indicators, and then is rewarded based on the average centipawn loss of players that the position is given to. For now, I'll do what I can to have the methods generate effective positions without the use of AI.
