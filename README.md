@@ -42,6 +42,7 @@ Takes positions from databases of human games.
 Opening: Takes positions that stemmed from the desired opening  
 CentiMax: Takes positions from Grandmaster games specifically  
 
+# Average Centipawn Loss Model
 In addition, for all three methods an algorithm can give feedback on the position that the method has created by assigning it a predicted average centipawn loss score. If this value is too low, another position will be generated. Here are the indicators that may affect the predicted score:  
 #of undefended attacked pieces-0 is generally the best, 1 is generally the worst, anything more gets progressively better  
 #of total attacked pieces-higher is better  
