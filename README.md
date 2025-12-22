@@ -53,6 +53,6 @@ Note: For now, #of best moves can be defined as the best move and the number of 
 This algorithm to predict average centipawn loss would greatly benefit from being the result of AI that generates positions, keeping track of the values for the above indicators, and then is rewarded based on the average centipawn loss of players that the position is given to. For now, I'll do what I can to have the methods generate effective positions without the use of AI.
 
 # What's going on right now?  
-<img width="1477" height="885" alt="image" src="https://github.com/user-attachments/assets/af4fc3b1-381f-405a-afbb-48723794bdc3" />
+<img width="1477" height="685" alt="image" src="https://github.com/user-attachments/assets/af4fc3b1-381f-405a-afbb-48723794bdc3" />
 
 This is what I currently have coded (
