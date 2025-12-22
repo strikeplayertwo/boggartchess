@@ -52,7 +52,10 @@ Note: For now, #of best moves can be defined as the best move and the number of 
  
 This algorithm to predict average centipawn loss would greatly benefit from being the result of AI that generates positions, keeping track of the values for the above indicators, and then is rewarded based on the average centipawn loss of players that the position is given to. For now, I'll do what I can to have the methods generate effective positions without the use of AI.
 
-# What's going on right now?  
-<img width="1477" height="685" alt="image" src="https://github.com/user-attachments/assets/af4fc3b1-381f-405a-afbb-48723794bdc3" />
+# What's going on right now? 
+Efficiency, efficiency, efficiency.
+<img width="1477" height="600" alt="image" src="https://github.com/user-attachments/assets/af4fc3b1-381f-405a-afbb-48723794bdc3" />
 
-This is what I currently have coded (
+This is what I currently have coded. The game currently works in some function, as a player by themself can play moves and they will get worse and worse positions from chess tournament games until they get out of the eval range of the given games that were loaded. Getting it to work was difficult, and now every aspect of generation and sorting positions can be improved. 
+
+What makes this so hard is being able to have evaluated positions ready to go that can be loaded efficiently--wait times are currently 10-30 seconds per move in normal ranges. I may look to make a database full of preloaded positions with numerical eval values that the backend can pull from--it currently evaluates random positions after receiving them and waits until it finds a position with an eval in the dedicated range.
