@@ -56,6 +56,13 @@ This algorithm to predict average centipawn loss would greatly benefit from bein
 Efficiency, efficiency, efficiency.
 <img width="1477" height="600" alt="image" src="https://github.com/user-attachments/assets/af4fc3b1-381f-405a-afbb-48723794bdc3" />
 
-This is what I currently have coded. The game currently works in some function, as a player by themself can play moves and they will get worse and worse positions from chess tournament games until they get out of the eval range of the given games that were loaded. Getting it to work was difficult, and now every aspect of generation and sorting positions can be improved. 
+This is what I currently have coded. The game currently works in some function, as a player by themself can play moves and they will get worse and worse positions from chess tournament games until they get out of the eval range of the given games that were loaded. Getting it to work was difficult, and now every aspect of generation and sorting positions can be improved.  
 
-What makes this so hard is being able to have evaluated positions ready to go that can be loaded efficiently--wait times are currently 10-30 seconds per move in normal ranges. I may look to make a database full of preloaded positions with numerical eval values that the backend can pull from--it currently evaluates random positions after receiving them and waits until it finds a position with an eval in the dedicated range.
+What makes this so hard is being able to have evaluated positions ready to go that can be loaded efficiently--wait times are currently 10-30 seconds per move in normal ranges. I may look to make a database full of preloaded positions with numerical eval values that the backend can pull from--it currently evaluates random positions after receiving them and waits until it finds a position with an eval in the dedicated range.  
+
+Additionally, having to deeply evaluate the player's move after they make it is definitely a challenge in terms of wait times.  
+
+Development continues to be very technical for now, and will probably be for a while, but I'm much looking forward to creating immersive visuals and sounds for this.  
+
+I hope you find the project interesting, and I am looking forward to your comments, suggestions and questions.
+Thanks for your time! 
