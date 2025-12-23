@@ -32,15 +32,21 @@ Places pieces somewhat randomly on the board.
 Opening: %of pieces in their opening position is required  
 CentiMax: %chance to place kings on opposite side of the board, %chance to generate a piece in the line of sight of another piece (it would place a piece a knight's move away from a knight, on a diagonal from a bishop, etc. as creating the potential for captures may increase CentiMax)  
 To increase the accuracy of these positions to real chess positions, kings can be placed near their starting squares or castling squares, no two bishops of the same color can be on the same color square, knights and bishops can be placed in common positions for them, and common pawn formations for the opening can be generated in chunks.  
+Pros: Positions can be created very quickly, infinite amount can be generated  
+Cons: Positions may not be as accurate to real chess games, which may limit their effectiveness in training.  
 
 #2-- Random move sequencing  
 Starts with an opening position, then uses probable/slightly random moves to get a new position.  
 CentiMax: Prefers for moves that increase the number of potential captures  
+Pros: Infinite amount of positions can be generated, positions are mostly accurate to real positions  
+Cons: May take a while to generate positions on the fly.   
 
 #3-- Position gathering  
 Takes positions from databases of human games.
 Opening: Takes positions that stemmed from the desired opening  
 CentiMax: Takes positions from Grandmaster games specifically  
+Pros: Very accurate to real positions, quick to generate if stored   
+Cons: Limited amount of positions available, if not stored in database may take a long time to generate  
 
 # Average Centipawn Loss Model
 In addition, for all three methods an algorithm can give feedback on the position that the method has created by assigning it a predicted average centipawn loss score. If this value is too low, another position will be generated. Here are the indicators that may affect the predicted score:  
