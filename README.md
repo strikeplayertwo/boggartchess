@@ -83,4 +83,8 @@ Update 2
 Depth 10 instead of Depth 18 is now used to find a position similar to the previous position. Once a similar position is found, it is then evaluated on Depth 18. Then, after the player plays another move and it is evaluated, the difference between the Depth 18 evaluation of the last position the player played and the Depth 18 evaluation of the position they were then given is ADDED to the Depth 18 evaluation of their move on the current position to find a new position. This increases fairness of the game and drastically reduces wait times.  
 
 Also, I have experimented with more arrows, and I will look to expand on that soon. I am looking to include all of the arrows highlighted in green below.  
-<img width="649" height="593" alt="image" src="https://github.com/user-attachments/assets/aff47492-3ad7-4213-9570-f2127025de86" />
+<img width="740" height="391" alt="image" src="https://github.com/user-attachments/assets/2e97cb03-7e7b-4a0d-a38e-d0db6eb87546" />  
+
+I rewrote it to make it easier to understand:  
+<img width="613" height="261" alt="image" src="https://github.com/user-attachments/assets/7babb31c-166e-4431-9114-5c1087338b5f" />
+
