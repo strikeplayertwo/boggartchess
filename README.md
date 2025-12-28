@@ -105,3 +105,5 @@ However, it even takes me a while to understand this, and it would be significan
 Update 4  
 <img width="388" height="312" alt="image" src="https://github.com/user-attachments/assets/1cfc6d7e-3084-486c-8705-85f49651fb89" />  
 I added the green arrow and it definitely looks cool and helps with analysis, however I don't think this is going to become any more easily understandable without either less arrows or another board.  
+<img width="313" height="316" alt="image" src="https://github.com/user-attachments/assets/01191e99-556e-4365-bf60-84ce2fe15c57" />  
+Here's another screenshot, I blundered mate lol
