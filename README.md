@@ -1,3 +1,4 @@
+12/23/25  
 Hi! Boggart Chess is of course a working title.  
 
 I decided to start a dev log to keep track of my progress and keep myself motivated. I am busy with school, but will hopefully be able to post updates relatively frequently.  
@@ -59,7 +60,7 @@ Note: For now, #of best moves can be defined as the best move and the number of 
 This algorithm to predict average centipawn loss would greatly benefit from being the result of AI that generates positions, keeping track of the values for the above indicators, and then is rewarded based on the average centipawn loss of players that the position is given to. For now, I'll do what I can to have the methods generate effective positions without the use of AI.
 
 # What's going on right now? 
-Efficiency, efficiency, efficiency.
+Efficiency, efficiency, efficiency.  
 <img width="1477" height="600" alt="image" src="https://github.com/user-attachments/assets/af4fc3b1-381f-405a-afbb-48723794bdc3" />
 
 This is what I currently have coded. The game currently works in some function, as a player by themself can play moves and they will get worse and worse positions from chess tournament games until they get out of the eval range of the given games that were loaded. Getting it to work was difficult, and now every aspect of generation and sorting positions can be improved.  
@@ -70,5 +71,16 @@ Additionally, having to deeply evaluate the player's move after they make it is 
 
 Development continues to be very technical for now, and will probably be for a while, but I'm much looking forward to creating immersive visuals and sounds for this.  
 
-I hope you find the project interesting, and I am looking forward to your comments, suggestions and questions.
+I hope you find the project interesting, and I am looking forward to your comments, suggestions and questions.  
 Thanks for your time! 
+
+12/26/25  
+Update 1  
+Arrows are now added to the game, showing an arrow for the opponent's best reponse to the move played and the player's best response to that move all on the smaller board. I am planning on adding more arrows soon.  
+
+12/27/25  
+Update 2  
+Depth 10 instead of Depth 18 is now used to find a position similar to the previous position. Once a similar position is found, it is then evaluated on Depth 18. Then, after the player plays another move and it is evaluated, the difference between the Depth 18 evaluation of the last position the player played and the Depth 18 evaluation of the position they were then given is ADDED to the Depth 18 evaluation of their move on the current position to find a new position. This increases fairness of the game and drastically reduces wait times.  
+
+Also, I have experimented with more arrows, and I will look to expand on that soon. I am looking to include all of the arrows highlighted in green below.  
+<img width="649" height="593" alt="image" src="https://github.com/user-attachments/assets/aff47492-3ad7-4213-9570-f2127025de86" />
