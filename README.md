@@ -91,4 +91,13 @@ I rewrote it to make it easier to understand:
 Here is what it would look like:  
 <img width="693" height="924" alt="image" src="https://github.com/user-attachments/assets/27abd752-8420-4dfd-a15d-665c3bd477fa" />
 
-This should have everything needed for a simple understanding and analysis, I am very open to any improvements on these methods. 
+This should have everything needed for a simple understanding and analysis, I am very open to any improvements on these methods.  
+
+12/28/25  
+Update 3  
+I got all of the arrows implemented, but it's a bit questionable:  
+<img width="308" height="315" alt="image" src="https://github.com/user-attachments/assets/4172f4b3-33ee-4950-bf98-468076712aa4" />  
+
+As someone who knows what the colors mean and someone who is an experienced chess player, I can figure out what it is trying to tell me. It is saying that the move I played, Qg6, is suboptimal because It allows Qc4, which would set up a discovered attack on my king that I would need to walk out of, then allowing the move e4. Conversely, if I had played the best move highlighted in green, Qe6, then if White had tried the same Qc4 move, I could have played Qxd5 (that's the blue arrow).  
+
+However, it even takes me a while to understand this, and it would be significantly more challenging to players who are either new to chess OR to the arrow and square colors. It's definitely cool but needs some work. I am planning on adding a green arrow to show the best move, and I may think about adding faint/translucent pieces to communicate things more clearly, like a translucent black queen on e6 and (maybe) a translucent white queen on c4.  
