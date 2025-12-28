@@ -88,3 +88,4 @@ Also, I have experimented with more arrows, and I will look to expand on that so
 I rewrote it to make it easier to understand:  
 <img width="613" height="261" alt="image" src="https://github.com/user-attachments/assets/7babb31c-166e-4431-9114-5c1087338b5f" />
 
+Here is what it would look like: <img width="613" height="261" alt="image" src="https://github.com/user-attachments/assets/267eaace-2c5f-482b-ad4f-597336dbc75d" />
