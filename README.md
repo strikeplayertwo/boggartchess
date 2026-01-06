@@ -1,4 +1,4 @@
-Latest working code for chess variant: [https://github.com/strikeplayertwo/draftchess3](https://github.com/strikeplayertwo/draftchess3)
+Latest working code for chess variant: [https://github.com/strikeplayertwo/draftchess3](https://github.com/strikeplayertwo/draftchess3).
 I am currently adding user accounts and creating an algorithm that uses player stats to predict the chance a player will make a mistake on a given chess position. I am also developing an AI to improve this algorithm.
 
 Latest working code for chess engine in Java: [https://github.com/strikeplayertwo/ChessEngine](https://github.com/strikeplayertwo/ChessEngine) or [https://replit.com/@PeRsOnGavrocks/GH6](https://replit.com/@PeRsOnGavrocks/GH6)
