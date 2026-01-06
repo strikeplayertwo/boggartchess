@@ -1,3 +1,17 @@
+Latest working code for chess variant: https://github.com/strikeplayertwo/draftchess3
+I am currently adding user accounts and creating an algorithm that uses player stats to predict the chance a player will make a mistake on a given chess position. I am also developing an AI to improve this algorithm.
+
+Latest working code for chess engine in Java: https://github.com/strikeplayertwo/ChessEngine
+
+Random terrain generation game: https://scratch.mit.edu/projects/533852888/
+Tester to change terrain size: https://scratch.mit.edu/projects/796123265/
+
+
+
+
+Below is a devlog for my chess variant.
+
+
 12/23/25  
 Hi! Boggart Chess is of course a working title.  
 
