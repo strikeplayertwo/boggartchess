@@ -6,12 +6,7 @@ Latest working code for chess engine in Java: [https://github.com/strikeplayertw
 Random terrain generation game: [https://scratch.mit.edu/projects/533852888/](https://scratch.mit.edu/projects/533852888/)
 Tester to change terrain size: [https://scratch.mit.edu/projects/796123265/](https://scratch.mit.edu/projects/796123265/)  
 
-
-
-
-
-
-
+<br><br><br><br><br>
 Below is a devlog for my chess variant.
 
 
